@@ -10,7 +10,7 @@ module.exports = function(){
   var db = mongoose.connect(config.db);
 
   // Load the application models
-  require('../models/user');
+  require('../app/models/user');
   // Return the Mongoose connection instance
   return db;
 

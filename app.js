@@ -2,8 +2,8 @@
 
 // Load the module dependencies
 var mongoose = require('./config/mongoose');
-var passport = require('./config/passport');
 var express = require('./config/express');
+var passport = require('./config/passport');
 
 // Create a new Mongoose connection instance
 var db = mongoose();

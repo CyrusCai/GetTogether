@@ -1,5 +1,4 @@
 'use strict';
-
 // Load the module dependencies
 var express = require('express');
 var path = require('path');
@@ -28,13 +27,21 @@ module.exports = function(db) {
   app.use(passport.session());
 
   // view engine setup
-  app.set('views', path.join(__dirname, '../views'));
+  app.set('views', path.join(__dirname, '../views/'));
   app.set('view engine', 'jade');
 
-  var index = require('../controllers/index');
-  var users = require('../controllers/users');
-  var activity = require('../controllers/activity');
-  var userService = require('../services/userService');
+  // loading the routes. If new routes is added, add require and app.use here
+  var index = require('../app/routes/index');
+  var users = require('../app/routes/user');
+  var activity = require('../app/routes/activity');
+
+  app.use('/',index);
+  app.use('/activities', activity);
+  app.use('/users', users);
+
+  // require('../app/routes/index')(app);
+  // require('../app/routes/user')(app);
+  // require('../app/routes/activity')(app);
 
   // uncomment after placing your favicon in /public
   //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -44,10 +51,7 @@ module.exports = function(db) {
   app.use(cookieParser());
   app.use(express.static(path.join(__dirname, 'public')));
 
-  app.use('/', index);
-  app.use('/activities', activity);
-  app.use('/users', users);
-  app.use('/userService', userService);
+
 
   // catch 404 and forward to error handler
   app.use(function(req, res, next) {

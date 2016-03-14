@@ -4,5 +4,5 @@
 
 
 module.exports = {
-  db:'mongodb://localhost/gotogether',
+  db:'mongodb://localhost/goTogether',
 }
