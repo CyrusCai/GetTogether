@@ -9,23 +9,23 @@
 6 silly lifecycle GetTogether@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle GetTogether@0.0.0~start: GetTogether@0.0.0
 8 verbose lifecycle GetTogether@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle GetTogether@0.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\MyWorkStation\GetTogether\node_modules\.bin;C:\Users\Xinlai_He\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Xinlai_He\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\idmu\common;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Skype\Phone;C:\Program Files\nodejs;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Users\Xinlai_He\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
-10 verbose lifecycle GetTogether@0.0.0~start: CWD: C:\MyWorkStation\GetTogether
+9 verbose lifecycle GetTogether@0.0.0~start: PATH: C:\Users\Cyrus_Cai\AppData\Roaming\nvm\v5.4.1\node_modules\npm\bin\node-gyp-bin;D:\Group Project -Get together\Project\GetTogether\node_modules\.bin;C:\Users\Cyrus_Cai\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\local\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\Cyrus_Cai\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\idmu\common;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Skype\Phone;C:\Users\Cyrus_Cai\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Users\Cyrus_Cai\AppData\Roaming\npm;C:\Users\Cyrus_Cai\AppData\Roaming\nvm;C:\Program Files\nodejs;%MONGO_PATH;C:\Program Files (x86)\Git\usr\bin\vendor_perl;C:\Program Files (x86)\Git\usr\bin\core_perl
+10 verbose lifecycle GetTogether@0.0.0~start: CWD: D:\Group Project -Get together\Project\GetTogether
 11 silly lifecycle GetTogether@0.0.0~start: Args: [ '/d /s /c', 'node ./bin/www' ]
 12 silly lifecycle GetTogether@0.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle GetTogether@0.0.0~start: Failed to exec start script
 14 verbose stack Error: GetTogether@0.0.0 start: `node ./bin/www`
 14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:232:16)
+14 verbose stack     at EventEmitter.<anonymous> (C:\Users\Cyrus_Cai\AppData\Roaming\nvm\v5.4.1\node_modules\npm\lib\utils\lifecycle.js:232:16)
 14 verbose stack     at emitTwo (events.js:87:13)
 14 verbose stack     at EventEmitter.emit (events.js:172:7)
-14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Users\Cyrus_Cai\AppData\Roaming\nvm\v5.4.1\node_modules\npm\lib\utils\spawn.js:24:14)
 14 verbose stack     at emitTwo (events.js:87:13)
 14 verbose stack     at ChildProcess.emit (events.js:172:7)
 14 verbose stack     at maybeClose (internal/child_process.js:821:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 15 verbose pkgid GetTogether@0.0.0
-16 verbose cwd C:\MyWorkStation\GetTogether
+16 verbose cwd D:\Group Project -Get together\Project\GetTogether
 17 error Windows_NT 6.3.9600
 18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
 19 error node v5.4.1

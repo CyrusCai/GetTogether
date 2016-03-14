@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  p= title
+  div(class="container")
+    div(class="navbar-inner")
+      ul(class="nav nav-pills nav-stacked col-md-3")
+        li(href = "#")
+          a(href = "#") Padding Activity
+        li(href = "#")
+          a(href = "#") Ongoing Activity
+        li(href = "#")
+          a(href = "#") upcoming Activity
+        li(href = "#")
+          a(href = "#") History Activity
+    block activityContent

@@ -1,0 +1,48 @@
+extends layout
+extends activityLayout
+
+block activityContent
+  div(class="container")
+    div(class="col-md-8")
+      div(class="panel panel-primary")
+        div(class="panel-heading ")
+          h3 Hiking
+        div(class="panel-body")
+          div(class="panel panel-success")
+            div(class="panel-heading ")
+              h4 Activity Information
+            div(class="panel-body")
+              div(class="row" name="panel-name")
+                span(class = "col-md-3") Activity Name
+                span(class = "col-md-5") Hiking
+              div(class="row" name="panel-location")
+                span(class = "col-md-3") Activity Location
+                span(class = "col-md-5") Shenzhen
+              div(class="row" name="panel-time")
+                span(class = "col-md-3") Activity Time
+                span(class = "col-md-5") 3/7/2015
+              div(class="row" name="panel-organizer")
+                span(class = "col-md-3") Activity Organizer
+                span(class = "col-md-5") Cyrus
+          div(class="panel panel-info")
+            div(class="panel-heading")
+              h4 Participants Information
+            div(class="panel-body")
+              each user in users
+                label
+                  a(type = "button" onclick="getUser({user.id})" href = "#") user.name
+          div(name="difActivity")
+            if list == "pendding"
+              div(name="buttonContainer")
+                div(class ="col-md-1 col-md-offset-3")
+                  button(name="accept") Accept
+                div(class ="col-md-1 col-md-offset-3")
+                  button(name="reject") Reject
+            else if list == "ongong" || list == "history"
+              div(class="panel panel-danger")
+                div(class="panel-heading ")
+                  h3 Image Area
+                div(class="panel-body imgContainer")
+                  for imgName in [1,2,3,4]
+                   img(class="img-circle" src = "../images/detail_placeholder.jpg")
+
